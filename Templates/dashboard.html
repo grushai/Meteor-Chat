@@ -1,0 +1,19 @@
+<template name="dashboard">
+    <form>
+
+        <p>You're logged in as {{loginName}} .</p>
+        <p align="center"><b>Here you can update your Profile information</b></p>
+        <p align="left">First Name<input type="text" name="updateName"></p>
+        <p align="left">Last Name<input type="text" name="updateLastName"></p>
+
+        <p align="left"> Location <select name="updateLocation" id="updatedLocation">
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Central America" selected="selected">Central America</option>
+            <option value="Africa">Africa</option>
+        </select></p>
+        <input type="submit" value="Save">
+        <p><a href="#" class="logout">Logout</a></p>
+
+    </form>
+</template>
